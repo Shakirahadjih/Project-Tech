@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Shakirahadjih/Project-Tech/issues"
   },
-  "homepage": "https://github.com/Shakirahadjih/Project-Tech#readme"
+  "homepage": "https://github.com/Shakirahadjih/Project-Tech#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
