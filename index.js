@@ -1,12 +1,25 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const nunjucks = require('nunjucks');
 
-app.use (express.static('public'))
+app.set('view engine', 'njk');
+
+nunjucks.configure('views', {
+    autoescape: true,
+    express: app
+});
+
+app.get('/', function(req, res) {
+    res.render('home', {});
+});
+
+//routes
+app.use(express.static('static'));
 
 app.get('/', (req, res) => {
-  res.send('ewa gangsters!')
-});
+    res.send('Hello World!')
+})
 
 app.get('/movies', (req, res) => {
     res.send('<h1>This will become a list of movies</h1>')

@@ -25,5 +25,8 @@
   "homepage": "https://github.com/Shakirahadjih/Project-Tech#readme",
   "dependencies": {
     "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
