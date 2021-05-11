@@ -74,9 +74,8 @@ First off, we need to install npm & git to your computer to run my application.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [wiki](https://github.com/Shakirahadjih/Project-Tech/wiki)_
 
 
 <!-- ROADMAP -->
