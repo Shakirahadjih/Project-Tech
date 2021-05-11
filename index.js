@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 const nunjucks = require('nunjucks');
 
-app.set('view engine', 'njk');
+app.set('view engine', '.njk');
 
 nunjucks.configure('views', {
     autoescape: true,
@@ -11,11 +11,11 @@ nunjucks.configure('views', {
 });
 
 app.get('/', function(req, res) {
-    res.render('home', {});
+    res.render('home', {title:"This is the home page"});
 });
 
 //routes
-app.use(express.static('static'));
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
