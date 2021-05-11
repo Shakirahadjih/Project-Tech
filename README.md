@@ -18,7 +18,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#Documentation">Documentation</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -80,11 +80,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Documentation
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-## Wiki
 
 Look at the [wiki](https://github.com/Shakirahadjih/Project-Tech/wiki) to watch my documentation during this project.
 
