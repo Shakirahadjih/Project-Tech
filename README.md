@@ -54,19 +54,19 @@ First off, we need to install npm & git to your computer to run my application.
     npm install
   ```
 
-1. Install git
+2. Install git
   ```sh
     install git
   ```
 
 ### Installation
 
-1. Clone the repo
+3. Clone the repo
    ```sh
    git clone https://github.com/Shakirahadjih/Project-Tech.git
    ```
 
-1. Clone the repo
+4. Clone the repo
 
   Use  `npm start` to get the application running.
 
