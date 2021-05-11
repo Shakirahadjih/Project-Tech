@@ -11,7 +11,7 @@ nunjucks.configure('views', {
 });
 
 app.get('/', function(req, res) {
-    res.render('home', {title:"This is the home page"});
+    res.render('home', {title:"FVNKY FIND"});
 });
 
 //routes
