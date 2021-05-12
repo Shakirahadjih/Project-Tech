@@ -50,19 +50,19 @@ Follow these simple steps to install my project locally.
 First off, we need to install npm & git to your computer to run my application.
 
 1. Install NPM packages
-  ```sh
+  ```
     npm install
   ```
 
 2. Install git
-  ```sh
+  ```
     install git
   ```
 
 ### Installation
 
 3. Clone the repo
-   ```sh
+   ```
    git clone https://github.com/Shakirahadjih/Project-Tech.git
    ```
 
