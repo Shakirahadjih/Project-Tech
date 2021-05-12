@@ -35,7 +35,7 @@ This project is an assignment from the Hogeschool van Amsterdam for the study Co
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This application is built with a template engine and the following coding languages.
 * Javascript
 * Nunjucks
 * Html
