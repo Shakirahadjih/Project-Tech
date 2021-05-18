@@ -57,3 +57,21 @@ const sport_preferences = [
 ];
 
 // database connection
+let db = null;
+
+async function connectDB() {
+    const uri = process.env.DB_URI;
+    console.log(uri);
+    // make connection to database
+    const client = new MongoClient(uri, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    });
+    try {
+        await client.connect();
+        //If connnection is succesful, search for database
+        db = await client.db(process.env.DB_NAME);
+    } catch (error) {
+        console.log(error);
+    }
+}
