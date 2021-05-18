@@ -1,7 +1,10 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const dotenv = require("dotenv").config();
 const nunjucks = require('nunjucks');
+
+console.log(process.env.TESTVAR)
 
 app.set('view engine', '.njk');
 
@@ -21,8 +24,12 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.get('/movies', (req, res) => {
-    res.send('<h1>This will become a list of movies</h1>')
+app.get("/filter", async(req, res) => {
+    res.render("filter.njk");
+});
+
+  app.get('/filter', (req, res) => {
+    res.send('<h1>no</h1>')
   });
 
   app.get('/movies/:movieId/:slug', (req, res) => {
@@ -36,3 +43,19 @@ app.get('/movies', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
+// Define variables
+const genders = [
+    "Female",
+    "Male",
+];
+const sport_preferences = [
+    "Kitesurf",
+    "Surf",
+    "Wakeboard",
+    "Snowboard",
+    "Skate",
+];
+
+//database
+

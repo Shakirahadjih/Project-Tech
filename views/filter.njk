@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% include "layouts/head.njk" %}
+   {% include "layouts/header.njk" %}
+</head>
+
+{% block content %}
+<form action="/filter" method="post">
+  <h2>ABOUT YOU!</h1>
+
+  <img src="" alt="">
+  <button id="profile_picture">Upload an image of you shredding it</button>
+
+  <div>
+    <label for="name">Name</label>
+    <input id="name_user" type="text" name="name" value={{user.name}}  placeholder="What's your name?">
+
+    <label for="about">About me</label>
+    <textarea id="about_user" type="text" name="about" placeholder="Fill in your description...">{{user.about}}</textarea>
+  </div>
+
+  <h2>SPOT PREFERENCES</h2>
+  <h4>Select spots you are interested in</h4>>
+  <ul id="spot_preferences_list" class="checkbox_list">
+      <li>
+        <label for={{spot}}>{{spot}}</label>
+        <input type="checkbox" name="spot" value={{spot}} id={{spot}}>
+      </li>
+  </ul>
+
+  <button id="save_profile_button">SAVE</button>
+</form>
+{% endblock %}
+
+{% include "layouts/footer.njk" %}
+</body>
+<script src='js/script.js'></script>
+</html>

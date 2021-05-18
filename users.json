@@ -1,0 +1,29 @@
+[
+    {
+      "slug":"Sky",
+      "name": "Sky",
+      "gender": "Female",
+      "image": "/public/images/",
+      "sport_preferences": ["kitesurf", "snowboard", "wakeboard"],
+      "description": "Hi, ik zoek een maatje om samen mee te kitesurfen, snowboarden of wakeboarden!"
+    },
+    {
+    "slug":"Ocean",
+      "name": "Ocean",
+      "gender": "Male",
+      "image": "/public/images/",
+      "sport_preferences": ["surf"],
+      "description":
+        "Who is up for a good surf sesh?!"
+    },
+
+    {
+    "slug":"Ocean",
+      "name": "Lucas",
+      "gender": "Male",
+      "image":"/public/images/",
+      "sport_preferences": ["surf", "kitesurf"],
+      "description":
+        "Looking for a kite(surf) buddy!"
+    }
+  ]

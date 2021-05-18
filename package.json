@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Shakirahadjih/Project-Tech#readme",
   "dependencies": {
+    "dotenv": "^9.0.2",
     "nunjucks": "^3.2.3"
   },
   "devDependencies": {
