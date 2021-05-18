@@ -18,7 +18,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#Documentation">Documentation</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -35,7 +35,7 @@ This project is an assignment from the Hogeschool van Amsterdam for the study Co
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This application is built with a template engine and the following coding languages.
 * Javascript
 * Nunjucks
 * Html
@@ -50,23 +50,23 @@ Follow these simple steps to install my project locally.
 First off, we need to install npm & git to your computer to run my application.
 
 1. Install NPM packages
-  ```sh
+  ```
     npm install
   ```
 
-1. Install git
-  ```sh
+2. Install git
+  ```
     install git
   ```
 
 ### Installation
 
-1. Clone the repo
-   ```sh
+3. Clone the repo
+   ```
    git clone https://github.com/Shakirahadjih/Project-Tech.git
    ```
 
-1. Clone the repo
+4. Get the application running
 
   Use  `npm start` to get the application running.
 
@@ -74,17 +74,14 @@ First off, we need to install npm & git to your computer to run my application.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [wiki](https://github.com/Shakirahadjih/Project-Tech/wiki)_
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Documentation
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-## Wiki
 
 Look at the [wiki](https://github.com/Shakirahadjih/Project-Tech/wiki) to watch my documentation during this project.
 
