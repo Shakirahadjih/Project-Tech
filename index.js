@@ -1,10 +1,9 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const { MongoClient, ObjectId } = require("mongodb");
 const dotenv = require("dotenv").config();
 const nunjucks = require('nunjucks');
-
-console.log(process.env.TESTVAR)
 
 app.set('view engine', '.njk');
 
@@ -17,7 +16,7 @@ app.get('/', function(req, res) {
     res.render('home', {title:"FVNKY FIND"});
 });
 
-//routes
+// routes
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
@@ -44,7 +43,7 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-// Define variables
+// defined variables, not necessarily in need of a database
 const genders = [
     "Female",
     "Male",
@@ -57,5 +56,22 @@ const sport_preferences = [
     "Skate",
 ];
 
-//database
+// database connection
+let db = null;
 
+async function connectDB() {
+    const uri = process.env.DB_URI;
+    console.log(uri);
+    // make connection to database
+    const client = new MongoClient(uri, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    });
+    try {
+        await client.connect();
+        //If connnection is succesful, search for database
+        db = await client.db(process.env.DB_NAME);
+    } catch (error) {
+        console.log(error);
+    }
+}
